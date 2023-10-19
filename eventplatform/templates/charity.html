@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %} 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund raising event platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'charity.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="#"><p class="fa fa-facebook"></p></a>
+            <a href="#"><p class="fa fa-twitter"></p></a>
+            <a href="#"><p class="fa fa-linkedin"></p></a>
+            <a href="#"><p class="fa fa-instagram"></p></a>
+        </div>
+        <div class="phone">
+            <i class="fa fa-phone"> +91-9894751617</i>
+        </div>
+        <div class="ul">
+            {% if data.signins %}
+        <ul>
+            <li class="fa fa-user">&nbsp;&nbsp;<a href="" class="login" style="text-decoration: none;font-family:'rubik';">{{data.username}}</a></li>
+        </ul>
+        <ul>
+            <li class="fa fa-sign-in">&nbsp;&nbsp;<a href="logout/" class="login">Log out</a></li>
+        </ul>
+        {% else %}
+        <ul>
+            <li class="fa fa-sign-in">&nbsp;&nbsp;<a href="login/" class="login"> Login</a></li>
+        </ul>
+        {% endif %}
+        </div>
+    </header>
+    <div class="mainlogo">
+        <img src="{% static 'logo-demo-2.png' %}">
+        <div class="main">
+            <ul class="header-2">
+                <li class="h"><a href="#">Home</a></li>
+                <li class="h"><a href="#">Blog</a></li>
+                <li class="h"><a href="#">Our Causes</a></li>
+                <li class="h"><a href="#">Features</a></li>
+                <li class="h"><a href="#">Contact us</a></li>
+                <li class="h">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>            
+                </li>
+            </ul>
+        </div>
+        <div class="donate">
+            <button><a href="#">DONATE</a></button>
+        </div>
+        <div class="volunteer">
+            <button class="v"><a href="#">VOLUNTEER</a></button>
+        </div>
+    </div>
+    <div class="mainimage">
+        <div class="text">
+            <img src="https://cdn-icons-png.flaticon.com/128/2401/2401373.png">
+        </div>
+        <div class="content">
+            <h1>Home is <span>Life</span></h1>
+    </div>
+    <div class="quote">
+        <h4>We build strength,stability,and self reliance</h4>
+        <div class="quote-2">
+            <h4>through shelter</h4>
+        </div>
+        <div class="Act">
+            <button><a href="#">Act Now</a></button>
+        </div>
+    </div>
+    </div>
+    <div class="causes">
+        <img src="https://cdn-icons-png.flaticon.com/128/2401/2401373.png" class="img-causes">
+        <div class="heart">
+            <img src="{% static 'image.png' %}">
+        </div>
+    </div>
+    <div class="ourcauses">
+        <h3>Our Causes</h3>
+    </div>
+    <div class="view">
+        <h5>View All Causes<span>&#8594;</span></h5>
+    </div>
+    <div class="peoples">
+        <button class="fundraiser" style="position: relative;left:16.3em"><a href="fundraiser/" style="font-family: 'rubik';">Create a fundraiser page</a></button>
+    </div><br>
+        <!-- <div class="funds" style="display: inline-block;">
+            {% for x in fundsdata %}
+        <div class="add">
+            <div class="addusers">
+                <img src="{{x.image.url}}" alt="">
+            </div>
+            <br>
+            <div class="addusers-text">
+                <p>{{x.username}}</p>
+                <p>goals :Rs{{x.goal}}</p>
+                <p>{{x.message}}</p>
+                {% endfor %}
+            </div> -->
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                {% for x in fundsdata %}
+                <div class="col">
+                  <div class="card">
+                    <img src="{{x.image.url}}" class="card-img-top" alt="..." style="width:40em">
+                    <div class="card-body" >
+                        <p style="font-family: 'rubik';">username: {{x.username}}</p>
+                        <p style="font-family: 'rubik';">goals: Rs{{x.goal}}</p>
+                        <p style="font-family: 'rubik';">{{x.message}}</p>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+            </div>
+        
+</div>
+</div>
+</body>
+</html>

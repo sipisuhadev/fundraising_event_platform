@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600;700;800&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgb(26, 27, 26);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header {
+    margin-left: 50px;
+    position: relative;
+    top:.5em
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(88, 229, 88);
+    margin-right: 15px;
+}
+.header a:hover {
+    color: white;
+}
+
+.phone i
+{
+    color: white;
+    margin-top:.6em;
+    margin-left: 2em;
+}
+.ul
+{
+    margin-left:auto;
+    position: relative;
+    top:.5em;
+    text-decoration: none;
+    overflow: hidden;
+}
+ul
+{
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+    margin-bottom:-2em;   
+}
+.login
+{
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.login:last-child
+{
+    margin-right:1em;
+}
+.mainlogo
+{
+    background-color:white;
+    height:10em;
+    width:100%;
+    margin:0;
+}
+img
+{
+    width:5.5em;
+    margin-left:4em;
+    margin-top:2em;
+}
+
+.header-2 {
+    display: flex;
+    margin-left:-3.2em;
+    align-items: center;
+    list-style-type: none;
+}
+.h a
+{
+    display:flex;
+    float: right;
+    margin-right:10px;
+    color:grey;
+    position: relative;
+    overflow: hidden;
+}
+.main
+{
+    position: relative;
+    left:20em;
+    bottom:2.5em;
+}
+.main .header-2 .h a
+{
+    margin-right:2.5em;
+}
+
+.header-2 .h {
+    position: relative;
+}
+.header-2 .h a
+{
+    text-decoration: none;
+    font-family: 'rubik';
+}
+.header-2 .h a:hover
+{
+    color:rgb(65, 63, 63);
+}
+.donate
+{
+    margin-left: 74.5em;
+    position: relative;
+    bottom: 6.5em;
+
+}
+.donate button,.volunteer button
+{
+    border: none;
+}
+button a
+{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: bold;
+    padding: 10px;
+
+}
+button
+{
+    height:3em;
+    width:7em;
+    background-color:#3BCF93
+}
+.volunteer
+{
+    margin-left: 83em;
+    position: relative;
+    bottom: 9.46em;
+
+}
+.v
+{
+    height:3em;
+    width:9em;
+    background-color: #388A69;
+    padding:10px;
+}
+.mainimage
+{   
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hhcml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    height: 35em;
+    width:120em;
+    background-position: center;
+    background-size:cover;
+}
+.text
+{
+    position: relative;
+    left:15em;
+    top:5em;
+}
+.text img
+{
+    filter: invert(100%) brightness(100%);
+}
+.content h1
+{
+    color: white;
+    position: relative;
+    top:0.7em;
+    left:2.7em;
+    font-size:7em;
+    font-family: 'Rubik', sans-serif;
+}
+.content h1 span{
+    color:#3BCF93
+}
+.quote
+{
+    position: relative;
+    top:4em;
+    left:19.4em;
+}
+.quote h4
+{
+    color:#E9E9E9
+}
+.Act 
+{
+    position: relative;
+    bottom:-1em;
+}
+.Act button
+{
+    border: none;
+}
+.Act button:hover
+{
+    background-color: #388A69;
+}
+.Act button a
+{
+    font-family:"rubik";
+}
+.causes
+{
+    width:100%;
+    height:16em;
+    color: white;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://img.freepik.com/free-photo/hands-composition-about-support_23-2150510496.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.causes .img-causes
+{
+    filter:opacity(0.3) drop-shadow(black);
+    opacity: 0.3;
+    width:20em;
+    position: relative;
+    bottom:1em;
+    display: flex;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+}
+.heart
+{
+    position: relative;
+    top:-20em;
+    left:41em;
+}
+.heart img
+{
+    height:5em;
+    width:4.5em;
+    filter:invert(100%) brightness(100%);
+
+}
+.ourcauses h3
+{
+    font-family:"rubik";
+    position: relative;
+    bottom: 3em;
+    left:16.5em;
+    font-size: 2.5em;
+    color: white;
+}
+.view h5
+{
+    font-family: "rubik";
+    position: relative;
+    bottom:5em;
+    left:34em;
+    font-weight: bolder;
+    color: #3BCF93;
+}
+.view h5 span
+{
+    position: relative;
+    right: -.5em;
+    width: 1em;
+    font-weight: bolder;
+    color: #3BCF93;
+}
+.peoples
+{
+    position: relative;
+    left:20em;
+}
+.fundraiser
+{
+    width:24em;
+    background-color:grey;
+    border: none;
+    bottom: 3.2em; 
+    border-radius: 4em;
+}
+.add
+{
+    position: relative;
+    left:1em;
+    display: inline;
+}
+.fundraiser:hover
+{
+    background-color: rgb(111, 107, 107);
+}
+.addusers-text p
+{
+    font-family: 'rubik';
+}
+.inline
+{
+    display:flex;
+    flex-wrap: nowrap;
+}
+.add
+{
+    display: inline;
+    width: 100%;
+
+}
+.funds
+{
+    margin-left:20em;
+    display:inline;
+    width:100px;
+    height: 100px;
+    flex-wrap:nowrap;
+    gap:1em;
+    position:absolute;
+}
+
+.addusers img
+{
+    background-position: center;
+    background-size: cover;
+    display:inline;
+    height: 15em;
+    width:15em;
+    position: relative;
+    left:-2em;
+}
+.addusers-text
+{
+    position: relative;
+    left: 2em;
+}

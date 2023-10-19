@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundraiser Page</title>
+    <style>
+    	body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Fundraiser</h1>
+        <form action="add/" id="fundraiserForm" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="uname" required>
+
+            <label for="goal">Goal (Rs.):</label>
+            <input type="number" id="goal" name="mygoal" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="messages" rows="4" required></textarea>
+
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photos"  required>
+
+            <button type="submit" id="addButton">Add Fundraiser</button>
+        </form>
+    </div>
+    <!-- <script>
+    	document.getElementById("fundraiserForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
+    
+    const name = document.getElementById("name").value;
+    const goal = document.getElementById("goal").value;
+    const message = document.getElementById("message").value;
+    const photo = document.getElementById("photo").files[0].name;
+
+    // Here, you can perform further processing like sending data to a server or storing in a database.
+    // For demonstration purposes, we'll just log the data.
+    console.log("Name:", name);
+    console.log("Goal:", goal);
+    console.log("Message:", message);
+    console.log("Photo:", photo);
+});
+
+    </script> -->
+</body>
+</html>
